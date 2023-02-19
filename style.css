@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+   
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    font-family: inherit;
+}
+button{
+    background: none;
+    border: none;
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    height: 100vh;
+    font-family:"Red Hat Display", sans-serif;
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_container{
+    max-width: 327px;
+    background-color: white;
+    max-height: 567px;
+    border-radius: 20px;
+    text-align: center;
+    
+   
+    
+}
+
+.container h1{
+    font-weight: 900;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #1F2E55;
+
+}
+
+.container p{
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 20px;
+   color: #717FA6;
+
+}
+.plan{
+    margin: 24px;
+    border-radius: 11px;
+    background-color: #F7F9FF;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    padding:  16px ;
+
+}
+.plan button:hover{
+    color:#766CF1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.plan span{
+    font-size: 14px;
+    font-weight: 900;
+    color: #1F2E55;
+    line-height: 18px;
+}
+.plan p{
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.plan button{
+    margin-left: auto; 
+    font-size: 13px;
+    font-weight: 700;
+    color: #382AE1;
+    text-decoration: underline;
+   
+}
+.payment{
+    width: 279px;
+    height: 50px;
+    border-radius: 11px;
+   background-color:#382AE1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 24px;
+   box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+
+}
+.payment:hover{
+    background-color: #766CF1;
+    cursor: pointer;
+}
+.payment button:hover{
+    cursor:  pointer;
+}
+.payment button{
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+}
+.cancel button{
+    font-size: 15px;
+    font-weight: 900;
+    color: #717FA6;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    height: 20px;
+    
+}
+.cancel button:hover{
+    color: #1F2E55;
+    cursor: pointer;
+}    
+
+.container .ilust img{
+    border-radius: 20px 20px 0px 0px;
+       
+}
+
+.bg__image{
+    background:url("/images/pattern-background-mobile.svg")
+    no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+/* atribution*/
+.attribution {
+     font-size: 11px; text-align: center;
+     }
+   
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+     @media(min-width: 768px){
+        .bg__image{
+            background: url("./images/pattern-background-desktop.svg") no-repeat
+            center/cover;
+            height:50vh;
+        }
+     }
